@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>HopeWorks - Basic (Inline SVG images)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:20px; background:#f8fbff; color:#111; font-size:18px; }
+    h1 { text-align:center; }
+    .section { background:#fff; border:1px solid #ddd; padding:12px; margin:12px 0; border-radius:6px; }
+    .gallery { text-align:center; margin-top:8px; }
+    .svg-img { width:260px; height:160px; margin:6px; display:inline-block; border-radius:6px; border:1px solid #ccc; }
+    button { margin-top:10px; padding:8px 12px; background:#0b5fa5; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>HopeWorks</h1>
+  <p style="text-align:center; margin-top:0;">Helping Communities Grow</p>
+
+  <div class="section">
+    <h2>Our Work (images guaranteed to show)</h2>
+
+    <div class="gallery">
+      <!-- Inline SVG image 1 -->
+      <svg class="svg-img" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Community event">
+        <rect width="100%" height="100%" fill="#4aa3ff"/>
+        <text x="50%" y="48%" fill="#fff" font-family="Arial" font-size="18" text-anchor="middle">Community</text>
+        <text x="50%" y="70%" fill="#fff" font-family="Arial" font-size="14" text-anchor="middle">Health Camp</text>
+      </svg>
+
+      <!-- Inline SVG image 2 -->
+      <svg class="svg-img" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Volunteers">
+        <rect width="100%" height="100%" fill="#6ad07a"/>
+        <text x="50%" y="48%" fill="#064" font-family="Arial" font-size="18" text-anchor="middle">Volunteers</text>
+        <text x="50%" y="70%" fill="#064" font-family="Arial" font-size="14" text-anchor="middle">In Action</text>
+      </svg>
+
+      <!-- Inline SVG image 3 -->
+      <svg class="svg-img" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Helping hands">
+        <rect width="100%" height="100%" fill="#ff9f66"/>
+        <text x="50%" y="48%" fill="#520" font-family="Arial" font-size="18" text-anchor="middle">Helping</text>
+        <text x="50%" y="70%" fill="#520" font-family="Arial" font-size="14" text-anchor="middle">Hands</text>
+      </svg>
+    </div>
+
+   
+
+  <div class="section">
+    <h2>Mission</h2>
+    <p>We empower under-served communities through education, health awareness, and skill-building programs.</p>
+  </div>
+
+  <div class="section">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>Community Health Camp — Jan 18, 2026</li>
+      <li>Skill Workshop — Feb 7–8, 2026</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Donate</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you — demo donation received');">
+      <label>Amount (₹)</label>
+      <input type="number" min="1" required style="width:100%; padding:8px; margin-top:6px; box-sizing:border-box;">
+      <button type="submit">Donate</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Volunteer</h2>
+    <form onsubmit="event.preventDefault(); alert('Thanks — demo volunteer request received');">
+      <label>Name</label>
+      <input required style="width:100%; padding:8px; margin-top:6px;"><br>
+      <label>Email</label>
+      <input type="email" required style="width:100%; padding:8px; margin-top:6px;"><br>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+</body>
+</html>
